@@ -12,6 +12,7 @@ def get_latlon():
     lon = lon/100 # accounts for bad Linkit One example code
     return lat, lon
 lat, lon = get_latlon()
+print "Found GPS location of {}, {}".format(lat, lon)
 
 # check latlong accuracy
 for x in range(2):
